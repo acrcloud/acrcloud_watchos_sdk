@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ACRCloudWatchOSDemo WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>ACRCloudWatchOSDemo WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ACRCloudWatchOSDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A2E870161CD260E300E466A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E8702F1CD260E300E466A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E8703A1CD260E300E466A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E870431CD260E300E466A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
