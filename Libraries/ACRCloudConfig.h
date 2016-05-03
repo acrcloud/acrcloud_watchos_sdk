@@ -21,20 +21,7 @@ typedef enum {
     result_type_audio_live = 3,
 }ACRCloudResultType;
 
-typedef enum {
-    http_resume_type_error = -1,
-    http_resume_type_resume = 0,
-    http_resume_type_restart = 1
-} HTTPResumeType;
-
 #define ACRCLOUD_VERSION @"1.0"
-
-
-typedef void(^ACRCloudResultBlock)(NSString *result, ACRCloudResultType resMode);
-
-typedef void(^ACRCloudStateBlock)(NSString *state);
-
-typedef void(^ACRCloudVolumeBlock)(float volume);
 
 @interface ACRCloudConfig : NSObject
 {
@@ -47,9 +34,6 @@ typedef void(^ACRCloudVolumeBlock)(float volume);
     NSDictionary *_params;
     ACRCloudRecMode _recMode;
     int _requestTimeout;
-    ACRCloudResultBlock _resultBlock;
-    ACRCloudStateBlock _stateBlock;
-    ACRCloudVolumeBlock _volumeBlock;
 }
 
 
@@ -58,12 +42,8 @@ typedef void(^ACRCloudVolumeBlock)(float volume);
 @property(nonatomic, retain) NSString *host;
 @property(nonatomic, retain) NSString *audioType;
 @property(nonatomic, retain) NSString *homedir;
-@property(nonatomic, retain) NSString *uuid;
-@property(nonatomic, retain) NSDictionary *params;
 @property(nonatomic, assign) ACRCloudRecMode recMode;
 @property(nonatomic, assign) int requestTimeout;
-@property(nonatomic, copy) ACRCloudResultBlock resultBlock;
-@property(nonatomic, copy) ACRCloudStateBlock stateBlock;
-@property(nonatomic, copy) ACRCloudVolumeBlock volumeBlock;
+
 
 @end
